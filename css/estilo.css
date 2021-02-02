@@ -1,0 +1,392 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+body {
+
+}
+
+.container {
+    display: grid;
+    width: 540px;
+    margin: 0 auto;
+}
+
+@media (min-width: 576px) { 
+    .container {
+        width: 540px;
+    }
+ }
+
+@media (min-width: 768px) { 
+    .container {
+        width: 720px;
+    }
+ }
+
+@media (min-width: 992px) { 
+    .container {
+        width: 960px;
+    }
+ }
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1140px;
+    }
+ }
+
+
+
+/* ---------- HEADER ---------------------------------------- */
+
+
+header {
+    padding: 10px;
+    background: #ffc107;
+}
+
+header .container {
+    margin-top: 15px;
+    grid-template-columns: auto auto;
+}
+
+#menu-header {
+    justify-self: end;
+}
+
+header img {
+    margin-top:5px;
+    width: 130px;
+}
+
+header ul {
+    margin-top: 3px;
+}
+
+header li {
+    list-style: none;
+    padding: 5px;
+    display: inline;
+}
+
+header li a {
+    margin-left: 5px;
+    color: #706956;
+    text-decoration: none;
+}
+
+header li a:hover {
+    color: #000000;
+}
+
+header button {
+    background:#ffc107;
+    color: white;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 10%;
+    cursor: pointer;
+}
+
+header button:hover {
+    background:#fdfdfd;
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(255, 255, 255);
+}
+
+@media (min-width: 992px) { 
+    
+    header li a {
+        font-size: 19px;  
+        margin-right: 20px; 
+    }
+
+    header img {
+        margin-top:5px;
+        width: 180px;
+    }
+
+}
+
+
+
+/* ---------- MAIN: HOME ---------------------------------------- */
+
+
+#home {
+    background:#ffc107; 
+    color: white; 
+    padding: 10px;
+
+}
+
+main #home .container {
+    grid-template-columns: auto auto;
+}
+
+#rosto img {
+    margin-bottom: -15px;
+}
+
+#cadastrar {
+    align-self: center;
+}
+
+main #home h1 {
+    font-weight: lighter;
+    font-size: 50px;   
+    line-height: 60px;
+}
+
+main #home p {
+    margin: 15px 0 15px 0;
+    line-height: 23px;
+    font-size: 16px; 
+}
+
+
+main #home input {
+    width: 60%;
+    height: 30px;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5% 0% 0% 5%;
+    border: none;
+}
+
+main #home form #submeter_cadastro {
+    width: 33%;
+    height: 50px;
+    padding: 10px;
+    margin-left: -5px;
+    background: #007bff;
+    color: white;
+    border-radius: 0% 5% 5% 0%;
+    border: none;
+    cursor: pointer;
+}
+
+main #home form #submeter_cadastro:hover {
+    background: #1077e4;
+}
+
+main #home p a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+main #home p a button {
+    padding: 10px;
+    background: #ffc107; 
+    color: white;
+    border-radius: 5%;
+    border: solid white 1px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+main #home p a button:hover {
+    background:#fdfdfd;
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(255, 255, 255);
+
+}
+
+
+@media (max-width:768px) {
+    #rosto {
+        display: none;
+    }
+}
+
+@media (min-width: 992px) { 
+    
+    main #home h1 {
+        font-size: 60px;   
+    }
+    
+    main #home p {
+        font-size: 18px; 
+    }
+
+}
+
+@media (min-width: 1200px) {
+    main #home h1 {
+        font-size: 80px;   
+        line-height: 78px;
+        margin-bottom: 25px;
+    }
+    
+    main #home p {
+        font-size: 20px; 
+    }
+
+}
+
+
+/* ---------- MAIN: CONTEUDOS ---------------------------------------- */
+
+.conteudos {
+    border-bottom: 1px solid rgb(218, 218, 218);
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+main .conteudos .container {
+    grid-template-columns: auto;
+}
+
+main .main-texto {
+    align-self: center;
+    justify-self: center;
+    margin: 0 20px 0 20px;
+}
+
+main .conteudos img {
+    width: 100%;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.conteudos h2 {
+    margin-top: 30px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.conteudos p {
+    margin-top: 12px;
+    line-height: 23px;
+}
+
+.conteudos a {
+    margin-top: 12px;
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    border-radius: 5%;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+    width: 65px;
+
+}
+
+.conteudos a:hover {
+    background: #1077e4;
+}
+
+#dinheiro a {
+    margin-bottom: 50px;
+}
+
+#juros a {
+    margin-bottom: 50px;
+}
+
+@media (min-width: 768px) { 
+    main .conteudos .container {
+        grid-template-columns: auto auto;
+    }
+ }
+
+/* ---------- MAIN: MAIS ---------------------------------------- */
+
+main {
+    margin-bottom: 30px;
+}
+
+main .container {
+
+}
+
+main .mais-container {
+    grid-template-columns: 100%;
+}
+
+main #mais img {
+    width: 100%;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+#mais h2 {
+    font-size: 23px;
+    font-weight: 500;
+}
+
+#mais p {
+    margin-top: 12px;
+    line-height: 23px;
+}
+
+@media (min-width: 768px) { 
+    main .container {
+        grid-template-columns: auto auto auto;
+    }
+}
+
+/* ---------- FOOTER ---------------------------------------- */
+
+footer {
+
+    margin-bottom: 30px;
+    border-top: 1px solid rgb(218, 218, 218);
+}
+
+footer .container {
+    margin-top: 30px;  
+    grid-template-columns: auto auto;
+}
+
+#menu-footer ul {
+    margin-top: 3px;
+}
+
+#menu-footer li {
+    list-style: none;
+    padding: 5px;
+    display: inline;
+    padding: 30px 30px 0px 0px;
+}
+
+#menu-footer li a {
+    margin-left: 5px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+#menu-footer li a:hover {
+    color: #000000;
+}
+
+#botoes-footer a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+#botoes-footer {
+    justify-self: end;
+}
+
+#botoes-footer button {
+    padding: 10px;
+    background: #ffffff; 
+    color: rgb(0, 0, 0);
+    border-radius: 10%;
+    border: 0.1px solid rgb(0, 0, 0)7, 1, 1);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#botoes-footer button:hover {
+    background:#000000;
+    color: rgb(253, 253, 253);
+    border: 1px solid rgb(255, 255, 255);
+}
